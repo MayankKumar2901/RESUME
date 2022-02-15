@@ -8,6 +8,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: #b1eaff;
+}
+
 body {
   background: #585c68;
   font-size: 14px;
@@ -27,14 +32,14 @@ body {
 }
 
 .resume {
-  width: 800px;
+  width: 1519px;
   height: auto;
   display: flex;
-  margin: 50px auto;
+  margin: auto;
 }
 
 .resume .resume_left {
-  width: 280px;
+  width: 285px;
   background: #0bb5f4;
 }
 
@@ -146,7 +151,7 @@ body {
 }
 
 .resume .resume_right {
-  width: 520px;
+  width: 1234px;
   background: #fff;
   padding: 25px;
 }
@@ -155,13 +160,19 @@ body {
   color: #0bb5f4;
 }
 
-.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_project ul,
 .resume .resume_right .resume_education ul {
   padding-left: 40px;
   overflow: hidden;
 }
 
-.resume .resume_right ul li {
+.resume .resume_right .resume_project ul li,
+.resume .resume_right .resume_education ul li {
+  position: relative;
+  height: 140px;
+}
+
+.resume .resume_right .resume_about ul li {
   position: relative;
 }
 
@@ -180,7 +191,7 @@ body {
   margin-bottom: 0;
 }
 
-.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_project ul li:before,
 .resume .resume_right .resume_education ul li:before {
   content: "";
   position: absolute;
@@ -192,14 +203,14 @@ body {
   border: 2px solid #0bb5f4;
 }
 
-.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_project ul li:after,
 .resume .resume_right .resume_education ul li:after {
   content: "";
   position: absolute;
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 115px;
+  height: 132px;
   background: #0bb5f4;
 }
 
@@ -225,8 +236,8 @@ body {
   content: "";
   position: absolute;
   top: 40px;
-  right: -52px;
-  width: 50px;
+  right: -290px;
+  width: 289px;
   height: 2px;
   background: #0bb5f4;
 }
